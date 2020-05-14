@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'pg', '0.18.4'
 # gem 'bootstrap', '~> 4.3.1'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'redis'
