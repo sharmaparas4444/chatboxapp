@@ -12,6 +12,24 @@ App.conversation = App.cable.subscriptions.create("ConversationChannel", {
 
         if (!messages_visible) {
           conversation.removeClass('panel-default').addClass('panel-success');
+          toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+          }
+          toastr["success"]("Message Recieve", "Success")
         }
         conversation.find('.messages-list').find('ul').append(data['message']);
       }
